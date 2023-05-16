@@ -18,7 +18,10 @@ public class AmericanPizza implements Pizza {
     public final Dough dough;
     public final List<Topping> toppings;
 
-    public AmericanPizza(@Qualifier("yeast") Dough dough, Topping cucumber, Topping tomato, Topping bacon) {
+    public AmericanPizza(@Qualifier("yeast") Dough dough,
+                         Topping cucumber,
+                         Topping tomato,
+                         Topping bacon) {
         this.dough = dough;
         toppings = new ArrayList<>();
         toppings.add(cucumber);
